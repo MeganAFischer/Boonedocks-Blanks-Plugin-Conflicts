@@ -1,0 +1,33 @@
+# Copyright (C) 2025 Fortis Payment Systems
+# This file is distributed under the GNU General Public License v3.0.
+msgid ""
+msgstr ""
+"Project-Id-Version: Fortis for WooCommerce 1.0.0\n"
+"Report-Msgid-Bugs-To: https://woocommerce.com/my-account/create-a-ticket/\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-03-02T14:27:42+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.7.1\n"
+"language-team: LANGUAGE <EMAIL@ADDRESS>\n"
+"X-Domain: fortis-for-woocommerce\n"
+
+#. Plugin Name of the plugin
+msgid "Fortis for WooCommerce"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://fortispay.com/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Receive payments using the Fortis payments provider."
+msgstr ""
+
+#. Author of the plugin
+msgid "Fortis Payment Systems"
+msgstr ""
