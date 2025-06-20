@@ -1,0 +1,88 @@
+Plugin Name: WP Defender
+Author: WPMU DEV
+Tested up to: 6.8.1
+
+Change Log:
+
+= 5.3.1 ( 2025-06-12 ) =
+
+- Fix: Sync malicious IP count displayed in Defender and the Hub
+
+= 5.3.0 ( 2025-06-11 ) =
+
+- New: AntiBot Mode
+- Enhance: Improve Session Protection when loading an image
+- Enhance: Add session widget on the Dashboard page
+- Enhance: Rename slug for Expert Services
+- Enhance: Update wp.org screenshots
+- Enhance: Update Session Protection Tracking event
+- Enhance: Change "Central IP List" label to "Custom IP List"
+- Enhance: Change OTP page styling to match the default WordPress login
+- Enhance: Generate strong passwords that meet all verification requirements
+- Enhance: Update malware signatures to detect additional infected files
+- Enhance: Log custom IP Block events
+- Enhance: Log Unblocking event from Unlock Me option
+- Fix: MaxMind key field appears empty on the Local Blocklist page if the MaxMind key is removed from the database
+- Fix: No session logs appear when the Interim login screen is shown
+- Fix: Scan can't detect modifications in the Debug Log Manager plugin
+- Fix: Warning in PHP 8.4
+- Fix: File existence and readability checks in Malware_Result and Plugin_Integrity classes
+
+= 5.2.2 ( 2025-04-23 ) =
+
+- Fix: Plugin_Cross_Sell class error
+
+= 5.2.1 ( 2025-04-23 ) =
+
+- Enhance: Add a new menu item to help you discover other free plugins by WPMU DEV and more
+
+= 5.2.0 ( 2025-04-07 ) =
+
+- New: Session Protection
+- Enhance: Compatibility with WordPress 6.8
+- Enhance: Add a toggle to block popular spam/malicious User Agents
+- Enhance: Remove Semrush and Ahrefs from the default User Agent blocklist
+- Enhance: Improve the wpdef_sec_key_gen cron process on multisite
+- Enhance: Update Malware Signatures to detect suspicious code
+- Enhance: Improve the Quarantine flow during upgrade from free to pro plugin version
+- Enhance: Improve the class representing the vulnerability result
+- Enhance: Improve Trusted IP popup flow
+- Fix: Masked Login URL bypassed by using encoded characters
+- Fix: Audit Logging showing wrong time
+
+= 5.1.1 ( 2025-03-03 ) =
+
+- Enhance: Improve cron events for AntiBot Global Firewall on multisite
+- Enhance: Remove manual "All headers" option and migrate to Automatic IP detection for improved compatibility and security
+- Enhance: Update User Agent logic with AntiBot service to better detect potential threats
+
+= 5.1.0 ( 2025-02-26 ) =
+
+- New: Enforce strong password
+- Enhance: Manage all password-related settings in one place
+- Enhance: Improve lockout mechanism
+- Enhance: Upgrade plugin packages
+- Enhance: Support Unit server
+- Enhance: Translation improvements
+- Enhance: Improve IP Lockout redirect when user adds IP to Allowlist
+- Enhance: Create a new cookie to avoid Lockout caching in Hummingbird plugin
+- Enhance: Update minimum supported WordPress version
+- Enhance: Enable Plugin & Suspicious code scan by default on fresh installations
+- Enhance: Improve Malware_Result class
+- Enhance: Minor code improvements
+- Fix: Defender does not detect themes with vulnerabilities
+- Fix: Error while pfsockopen function is disabled
+- Fix: NaN is showing on AntiBot page when language is changed to German in the Dashboard plugin
+- Fix: Form does not submit if Google reCAPTCHA is enabled in both Defender and Forminator plugins
+- Fix: Malware Scanner highlights WordPress core files on IIS server
+- Fix: Database error related to AntiBot feature
+- Fix: Salt keys appear before open php tag
+- Fix: Google reCAPTCHA compact style is not working
+
+= 5.0.2 ( 2025-02-14 ) =
+
+- Improvement: Update 404 logic with AntiBot service to better detect and mitigate potential threats
+- Improvement: Enhancing IP Detection in Defender to prevent blocking of server IPs
+
+
+929832-1749785892-au

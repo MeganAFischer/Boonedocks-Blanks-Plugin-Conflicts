@@ -1,0 +1,1518 @@
+Plugin Name: SmartCrawl SEO
+
+Change Log:
+----------------------------------------------------------------------
+3.13.1 - 2025-04-24
+----------------------------------------------------------------------
+- Enhance: Compatibility with WordPress 6.8
+
+----------------------------------------------------------------------
+3.13.0 - 2025-02-05
+----------------------------------------------------------------------
+- Enhance: "Keyword" is now referred to as "Keyphrase"
+- Enhance: Improve Stop Word detection in Content Analysis
+- Enhance: Resolve conflicts between URL Redirection and WordPress Default Redirection
+- Fix: Focus Keyphrase now analyzes the entire keyphrase
+- Fix: Focus Keywords are not separated by commas
+- Fix: Allow override of Index and Follow in-post setting to global setting
+- Fix: Automatic Linking is 'Off' in the HUB
+- Fix: Character limit caps causing errors in URL redirection
+- Fix: SmartCrawl activation on WordPress lower than 6.4
+- Fix: Autolinking in WooCommerce Product Categories is not working
+- Fix: SmartCrawl can be installed on PHP versions lower than 7.4
+- Fix: Custom Meta Tags property gets stripped
+- Fix: A notice appears related to SmartCrawl after upgrading to WordPress 6.7
+- Fix: SEO recommendations incorrectly state that no images are added instead of checking for image alt text
+- Fix: "Follow - Override Post Type Setting" option is not working
+- Fix: Broken OpenGraph featured image
+- Fix: Automatic sitemap updates switch from Automatic to Manual after updating SmartCrawl
+- Fix: Handle specific string-type errors that occur with a particular option
+
+----------------------------------------------------------------------
+3.12.2 - 2024-12-17
+----------------------------------------------------------------------
+- Fix: Canonical URL conflict with certain pages.
+- Fix: Meta description error with BuddyPress.
+
+----------------------------------------------------------------------
+3.12.1 - 2024-12-09
+----------------------------------------------------------------------
+- Fix: Taxonomy Sitemap displaying 0 URLs when enabled.
+- Fix: Error "Call to a member function get_meta_title()" on WordPress Feed when the Title & Meta module is enabled.
+- Fix: Meta Title functionality in SmartCrawl not working correctly with Divi theme.
+
+----------------------------------------------------------------------
+3.12.0 - 2024-12-04
+----------------------------------------------------------------------
+- Enhance: Code improvements
+- Fix: Fixed missing OG Image tag when "Default Feature Image" is broken.
+- Fix: Resolved "undefined" issue in Google Preview.
+- Fix: Addressed fatal error with Cloudflare location-based redirection.
+- Fix: Fixed redirect URL error on custom post types.
+- Fix: Corrected issues with automatic linking for custom links.
+- Fix: A notice related to load_plugin_textdomain appearing after upgrading to version 6.7.
+
+----------------------------------------------------------------------
+3.11.0 - 2024-09-03
+----------------------------------------------------------------------
+- Enhance: White label improvements
+- Enhance: Site crawl cooldown timer
+- Enhance: Macros to support uppercase in custom fields
+- Enhance: Support spaces in redirect URLs
+- Fix: Configuration did not work with Advanced Tools modules
+- Fix: Permission issues with Advanced Tools in multisite environments
+- Fix: Issues with Author Schema
+- Fix: Error in automatic linking when using a slash between words
+- Fix: Missing uploadDate timezone in Video Schema
+- Fix: JavaScript error occurs when creating a redirect
+- Fix: Missing Advanced Tools after certain imports
+- Fix: Redirects not working with URLs containing special characters
+- Fix: OpenGraph tags are not added if images are deleted from the media library
+- Fix: Missing description and upload date metadata in YouTube playlists
+
+----------------------------------------------------------------------
+3.10.9 - 2024-07-09
+----------------------------------------------------------------------
+- Enhance: Security improvements.
+
+----------------------------------------------------------------------
+3.10.8 - 2024-06-03
+----------------------------------------------------------------------
+- Fix: Regex Redirection rules not working under certain conditions
+
+----------------------------------------------------------------------
+3.10.7 - 2024-05-28
+----------------------------------------------------------------------
+- Enhance: Data tracking improvements
+- Fix: Advanced Tools missing from modules and sub menu when applied from configs
+- Fix: Redirect from URL adds a space when "%20" is used
+- Fix: Incorrect URL in Content Analysis when duplicate primary focus keyword is used
+- Fix: Auto generate SEO Title and Meta Description not appearing
+
+----------------------------------------------------------------------
+3.10.6 - 2024-05-10
+----------------------------------------------------------------------
+- Fix: SEO Health checkup is failing.
+
+----------------------------------------------------------------------
+3.10.5 - 2024-04-23
+----------------------------------------------------------------------
+- Fix: Broken posts metabox.
+
+----------------------------------------------------------------------
+3.10.4 - 2024-04-23
+----------------------------------------------------------------------
+- Enhance: Moz Integration Access.
+- Fix: SEO Health mobile page doesn't look good.
+- Fix: Automatic linking UI issue when removing pages or posts from Exclusion.
+- Fix: Modal title for editing redirect states Add Redirect rather than Edit Redirect.
+- Fix: Remove link to usage tracking in docs when White label is enabled.
+- Fix: Typo in Social screen.
+- Fix: Until the post is published/refreshed, Google Preview does not work.
+- Fix: The error message "Something went wrong" appears if we search with empty results and then add redirects.
+
+----------------------------------------------------------------------
+3.10.3 - 2024-04-18
+----------------------------------------------------------------------
+- Enhance: Security improvements.
+
+----------------------------------------------------------------------
+3.10.2 - 2024-03-11
+----------------------------------------------------------------------
+- Enhance: UI improvements in Advanced Tools.
+- Enhance: Replace outdated logos.
+- Enhance: PHP 8.1 support.
+- Fix: WooCommerce settings changes do not reflect in Robots.txt preview.
+- Fix: MaxMind db update is not working without page refresh.
+- Fix: Unexpected notice in redirection regex settings.
+- Fix: Default redirection type not working in URL Redirection.
+- Fix: "Redirect To" will not allow adding URLs that are found in the content of Post,Page & Custom Post Type.
+- Fix: SmartCrawl redirection suggestions block from selecting the correct URL.
+- Fix: High Contrast Mode : Enable/Disable not working.
+- Fix: Module is shown as inactive after saving advanced tools settings.
+- Fix: Import Redirection does not contain "Redirect To" field.
+- Fix: Automatic Linking and 301 Redirect are still visible in post/page editor if Advanced tools are not enabled on the subsite.
+- Fix: Getting PHP WordPress Database error {table_prefix}_smartcrawl_redirects when there is no url_redirection added.
+- Fix: Automatic Linking tab is not visible in the free version.
+- Fix: Advanced Tools overview page is not visible when all sub-modules are deactivated.
+- Fix: SEO Health and SEO Crawler Email Report not following schedule correctly.
+- Fix: Error when trying to add a category to Custom Post type.
+
+----------------------------------------------------------------------
+3.10.1 - 2024-02-08
+----------------------------------------------------------------------
+- Fix: Style conflicts.
+
+----------------------------------------------------------------------
+3.10.0 - 2024-02-05
+----------------------------------------------------------------------
+- Enhance: Module management UI & UX.
+- Enhance: Plugin conflict detection.
+- Enhance: Redirection module.
+- Fix: Deprecated warnings.
+- Fix: Settings on Quick setup are not working as expected.
+- Fix: Redirection settings can not be saved.
+- Fix: Auto auto-linking feature is visible on the free version even though it is not working.
+
+----------------------------------------------------------------------
+3.9.2 - 2024-01-04
+----------------------------------------------------------------------
+- Fix: Fatal error on on WP Customizer.
+
+----------------------------------------------------------------------
+3.9.1 - 2023-12-20
+----------------------------------------------------------------------
+- Fix: Sitemaps returning 404 after the update.
+
+----------------------------------------------------------------------
+3.9.0 - 2023-12-20
+----------------------------------------------------------------------
+- New: More redirection types.
+- New: Bulk edit redirection types.
+- New: Delete all redirects at once.
+- New: Create a redirect when a post/page is deleted.
+- Enhance: Redirection module UI/UX.
+- Enhance: Include location-based redirects in export and import.
+- Enhance: JSON based import and export.
+- Enhance: Refactor redirects UI in React.
+- Enhance: Moz module management.
+- Enhance: Copy updates.
+- Enhance: Initialize data tracking only on supported environment.
+- Enhance: Update Shared UI.
+- Fix: Default OG image overrides featured post image if both are set.
+- Fix: URL Redirection appears Advanced Tools tabs when deactivated.
+- Fix: URL used for redirection Regex matching doesn't contain the query params.
+- Fix: Conflict with redirects and WooCommerce.
+- Fix: Automatic Links deactivation won't work until removing all options.
+- Fix: Success message has %d character when importing.
+- Fix: Regions on location based redirects are not working.
+- Fix: Import Modal opens when we press enter key in search field.
+- Fix: Default redirection type drop down not working properly when Moz Api is connected.
+
+----------------------------------------------------------------------
+3.8.3 - 2023-11-20
+----------------------------------------------------------------------
+- Fix: Password protected post content is visible in schema and meta tags.
+
+----------------------------------------------------------------------
+3.8.2 - 2023-11-14
+----------------------------------------------------------------------
+- Fix: Conflict with WPML and TranslatePress.
+
+----------------------------------------------------------------------
+3.8.1 - 2023-10-30
+----------------------------------------------------------------------
+- Fix: Critical Error when trying to access advanced tools when disabled.
+- Fix: URL Redirect appears in-post when URL redirection is disabled.
+
+----------------------------------------------------------------------
+3.8.0 - 2023-10-24
+----------------------------------------------------------------------
+- New: Location Based Redirects
+- New: Smart Post and Page Selection for Redirects
+- Fix: Secondary Keyword with Spaces not being displayed
+- Fix: White Label Custom Logo is distorted and not square
+- Fix: Meta preview does show when no content added in the default editor
+- Fix: Can't enable Archive and Snippet options under Title & Meta > Homepage when Homepage is set to be a Static page
+- Fix: Missing OpenGraph and Twitter per-post settings in on-page SEO SmartCrawl Meta Box
+
+----------------------------------------------------------------------
+3.7.2 - 2023-08-29
+----------------------------------------------------------------------
+- Enhance: Sitemap reports.
+- Enhance: Update links.
+- Fix: Sitemap does not include pages created for other language.
+- Fix: Pro version does’t delete if free version is activated.
+- Fix: Conflicts with HTML DOM Parser library.
+- Fix: Title is undefined in meta section of post/page editor.
+- Fix: Title counter no longer displays 'x characters left' with Classic Editor in use.
+- Fix: Google preview not working for stackable builder shows undefined.
+
+----------------------------------------------------------------------
+3.7.1 - 2023-08-08
+----------------------------------------------------------------------
+- Improvement: Role access for SmartCrawl Shortcut in multisite.
+- Fix: Issue with external links number in the in-post content analysis.
+- Fix: Typos in SmartCrawl Usage Tracking, Quick setup Modal and Advanced Tools.
+- Fix: Archive and Snippet options can't be disabled while editing posts.
+- Fix: Automatic sitemap updates switches from Automatic to Manual after updating SmartCrawl.
+- Fix: Macro for Archive Page Label is missing.
+- Fix: Breadcrumbs not showing on the /blog/ page.
+- Fix: Breadcrumb activation changes tab to Automatic Links when activated for the first time.
+- Fix: Page Analysis results not updated.
+
+----------------------------------------------------------------------
+3.7.0 - 2023-07-18
+----------------------------------------------------------------------
+- Improvement: Performance improvements.
+- Improvement: Deactivate option for Social module.
+- Improvement: Deactivate option for Title & Meta module.
+- Fix: Hide disabled fields from post edit screen.
+- Fix: Unable to remove Schema types.
+
+----------------------------------------------------------------------
+3.6.5 - 2023-07-05
+----------------------------------------------------------------------
+- Improvement: Text updates.
+
+----------------------------------------------------------------------
+3.6.4 - 2023-06-06
+----------------------------------------------------------------------
+- Improvement: Optimize codebase for better performance.
+
+----------------------------------------------------------------------
+3.6.3 - 2023-05-29
+----------------------------------------------------------------------
+- Improvement: Compatibility with PHP 8.1 and 8.2.
+- Improvement: Compatibility with WordPress 6.2.
+- Improvement: Deactivate the free version when Pro is already active.
+- Improvement: Compatibility with WP Ultimo domain mapping.
+- Improvement: Compatibility with Blockify Pro theme.
+- Improvement: Update HTML Dom library.
+- Improvement: Hide unavailable features.
+- Improvement: User role compatibility.
+- Improvement: Translation string comments.
+- Fix: Tab alignment in the category page.
+- Fix: Console error on the category page.
+- Fix: Composer conflict.
+- Fix: Open Graph Twitter preview not working.
+- Fix: Unable to select macros in the taxonomy edit page.
+- Fix: Deprecated notices.
+- Fix: Title and description length validation logic.
+- Fix: Placeholders are not replaced with actual value.
+- Fix: Wrong time zone calculation.
+- Fix: Robots.txt module is deactivated when enter key is pressed.
+- Fix: Preferred Open Graph image not replacing default image.
+- Fix: Text alignments on auto-linking settings.
+
+----------------------------------------------------------------------
+3.6.2 - 2023-04-20
+----------------------------------------------------------------------
+- Fix: Error on post editor.
+
+----------------------------------------------------------------------
+3.6.1 - 2023-04-19
+----------------------------------------------------------------------
+- Fix: Error on post and product edit pages.
+- Fix: Primary category feature is missing.
+- Fix: Composer autoload conflict.
+
+----------------------------------------------------------------------
+3.6.0 - 2023-04-19
+----------------------------------------------------------------------
+- New: Disable the primary category feature by defining SMARTCRAWL_DISABLE_PRIMARY_TERMS.
+- New: Activate the Breadcrumbs module from the Dashboard.
+- Improvement: Refactor codebase for better performance.
+- Improvement: React-based in-post analysis.
+- Improvement: Removed deprecated classes.
+- Improvement: Use custom separator for separator macro.
+- Improvement: White label support for breadcrumb module.
+- Improvement: Validation for adding recipient form.
+- Improvement: Update search engine notification when sitemap type changes.
+- Improvement: Exclude attachment post type from content analysis.
+- Improvement: Sanitization for user inputs.
+- Fix: Fatal error on plugin uninstall.
+- Fix: Fatal error on deprecated class.
+- Fix: Primary category cannot be saved with Classic Editor if the target taxonomy slug contains more than one hyphen.
+- Fix: PHP warnings on the WooCommerce product edit page.
+- Fix: Typo in breadcrumb UI.
+- Fix: Missing documentation link.
+- Fix: White label not working on module icons.
+- Fix: SEO health check not working with WP 6.2.
+- Fix: Home page of one-page websites are not included in the sitemap.
+- Fix: SEO analysis shows an incorrect warning when keyword density is 1%.
+- Fix: Language versions of custom posts URLs missing from the sitemap.
+- Fix: Breadcrumb category and date macro does not work as expected and breaks the label format.
+- Fix: Sitemap shows 404 when no links are present.
+- Fix: Sitemap not working as expected with Chinese URLs.
+
+----------------------------------------------------------------------
+3.5.1 - 2023-03-14
+----------------------------------------------------------------------
+- Fix: Remove unwanted filter.
+
+----------------------------------------------------------------------
+3.5.0 - 2023-03-14
+----------------------------------------------------------------------
+- New: Add Breadcrumbs to the front-end.
+- New: Schema for Breadcrumbs.
+- New: Set Primary Category for Posts & Products
+- New: Scheduled sitemap update.
+- Improvement: Update Shared UI.
+- Fix: Wrong timezone used on sitemap's last crawl details.
+- Fix: Wrong search results for schema builder page selection.
+- Fix: Youtube API schema not working.
+- Fix: Sitemap scheduled emails not working.
+
+----------------------------------------------------------------------
+3.4.4 - 2023-02-22
+----------------------------------------------------------------------
+- Improvement: Permission checks for metabox.
+
+----------------------------------------------------------------------
+3.4.3 - 2023-02-08
+----------------------------------------------------------------------
+- New: Exclude pages from auto-linking by URL.
+- Improvement: Auto linking UI/UX.
+- Improvement: React-based Auto linking UI.
+- Improvement: Add better validation to Custom Keywords modal.
+- Improvement: Javascript ESLinting issues.
+- Fix: UI issues in Title & Meta settings.
+- Fix: URL Validation in Redirect module.
+- Fix: Scheduled email report issue.
+- Fix: Responsive design issue in Schema Type builder.
+- Fix: Responsive design issue in SEO score.
+- Fix: Archive Pages set to 'noindex'.
+- Fix: Broken icons.
+- Fix: Conflict with editor styles.
+- Fix: Deprecated warnings.
+- Fix: Auto linking optional settings are not working.
+- Fix: Skip already linked content from auto-linking again.
+- Fix: Redirect conflict with WPML.
+
+----------------------------------------------------------------------
+3.4.2 - 2023-01-26
+----------------------------------------------------------------------
+- Improvement: Strip HTML tags from preview.
+
+3.4.1 - 2022-12-20
+----------------------------------------------------------------------
+- Improvement: React-based SEO Health checkup.
+- Improvement: Redirect attachment pages to the file.
+- Improvement: Alert for enabling page builder support in auto-linking.
+- Fix: Broken icons.
+- Fix: http:// added to the Twitter username field after saving.
+- Fix: Property cannot be added when optional label field is not filled in Schema.
+- Fix: Can't update SmartCrawl Settings in Mapped domain (WP Ultimo).
+- Fix: Excluded URLs showing as missing in the Sitemap crawler.
+- Fix: URL encoding for Chinese characters.
+- Fix: Schema error on Reviews.
+- Fix: Translations are not working on the free version.
+- Fix: Broken link to developer docs.
+
+3.4.0 - 2022-12-06
+----------------------------------------------------------------------
+- New: Multiple keywords analysis.
+- New: SEO status column on taxonomy list.
+- New: Check if URL contains underscores.
+- New: Check for recommending a hand-crafted meta description.
+- New: Check if all external links are nofollow links.
+- New: Ability to disable SEO and Readability analysis status in the post list.
+- New: Filter to add extra images to SmartCrawl sitemap.
+- Improvement: Update meta description length recommendation.
+- Improvement: Show a notice when the current language is not supported for content analysis.
+- Improvement: List the posts using the same keyword for SEO analysis.
+- Improvement: Include featured images in content analysis.
+- Improvement: Remove redundant sitewide settings notice.
+- Fix: Issues with Yoast SEO settings import.
+- Fix: Unable to run SEO health check.
+- Fix: Conflict with Yoast SEO.
+- Fix: Custom meta tags are not updated.
+- Fix: og:URLs are not picking up correctly for BuddyPress.
+- Fix: Issues on settings reset.
+- Fix: jQuery compatibility issues.
+- Fix: FAQ Schema is not added if the location is set to be a specific post.
+- Fix: Cache issues on post excerpts auto-linking.
+- Fix: SEO Analysis can't check focus keywords with special characters in the URL.
+- Fix: SEO Analysis custom setup not detecting subheadings.
+- Fix: Can't delete custom links in automatic linking settings.
+- Fix: Focus keywords are detected if they are bolded.
+- Fix: Refresh button in content analysis SEO analysis does not always work.
+- Fix: Invalid sanitization of Facebook App ID.
+
+3.3.3 - 2022-11-17
+----------------------------------------------------------------------
+- Improvement: Minor performance improvements.
+
+3.3.2 - 2022-11-7
+----------------------------------------------------------------------
+- New: Option to disable object cache for auto-linked content.
+- Fix: Autolinking conflicts with several themes and page builders.
+
+3.3.1 - 2022-11-2
+----------------------------------------------------------------------
+- Improvement: Permission checks on config management.
+- Fix: Conflict with Defender login masking.
+
+3.3.0 - 2022-10-31
+----------------------------------------------------------------------
+- New: Pagination for Auto Linking custom keywords.
+- New: Add an option to prevent auto-linking of non-indexed pages.
+- New: Add an option to prevent auto-linking on image captions.
+- New: Auto linking on the excerpt.
+- New: Auto linking in WooCommerce product categories.
+- Improvement: Refactor Auto Linking module.
+- Improvement: Optimize queries and caching.
+- Improvement: Update Shared UI.
+- Improvement: Auto linking compatibility with Polylang plugin.
+- Improvement: Copy updates about language compatibility.
+- Improvement: RSS feed compatibility for auto-linking.
+- Improvement: Membership access check.
+- Improvement: Replace Google fonts with Bunny fonts for GDPR compliance.
+- Fix: Auto linking conflict with WooCommerce.
+- Fix: Fatal error on cron.
+- Fix: Wrong meta title character length on SEO checkup.
+- Fix: Wordfence blocking Title & Meta.
+- Fix: "Include Sitemap" option is not working on robots.txt.
+- Fix: Styling issues on sitemap.
+- Fix: Unable to save sitemap report settings.
+- Fix: Console errors on Schema settings.
+- Fix: Prevent duplicates option not working in auto-linking.
+- Fix: Prevent auto-linking on headings not working.
+- Fix: Multiple custom keywords are not working on auto-linking.
+- Fix: Unable to add video embeds when SmartCrawl is active.
+- Fix: Title meta tag is not visible on BuddyPress.
+- Fix: Conflict with Branda text replacement module.
+- Fix: Automatic Linking to Pages exposes HTML in text in DIVI theme.
+- Fix: Conflict with Ultimate Elementor plugin.
+- Fix: Sitemap exclusions are automatically reset.
+- Fix: Issue with the canonical tag.
+- Fix: Parsing error on the sitemap.
+- Fix: Image anchor tag link is missing on Divi theme.
+
+3.2.1 - 2022-09-22
+----------------------------------------------------------------------
+- Improvement: Membership checks.
+- Fix: CSS is visible on preview when an Elementor template is used.
+- Fix: Shared UI conflict.
+
+3.2.0 - 2022-08-31
+----------------------------------------------------------------------
+- Improvement: Remove redundant priority and frequency data from sitemap
+- Improvement: Remove redundant last modified timestamp from the sitemap index
+- Improvement: Better sitemap compatibility with bbPress
+- Fix: Unable to uninstall SmartCrawl plugin.
+
+3.1.0 - 2022-08-10
+----------------------------------------------------------------------
+Improvement: Code improvements.
+Improvement: Upgrade Shared UI.
+Fix: Unable to enable Media indexing.
+Fix: Schema types cannot have more than 10 in Schema of same type.
+
+----------------------------------------------------------------------
+3.0.1 - 2022-06-28
+----------------------------------------------------------------------
+Improvement: Improved performance for the sitemap troubleshooter
+Bug: Button disabled when adding new schema type to builder
+
+----------------------------------------------------------------------
+3.0.0 - 2022-06-15
+----------------------------------------------------------------------
+New: Custom schema type builder
+New: Sitemap troubleshoot wizard
+Improvement: Security improvements
+Improvement: WP 6.0 compatibility
+Fix: Link repetition in sitemap due to canonical URLs
+Fix: Google Preview shows wrong URL with WPBakery and Divi
+
+2.20.1 - 2022-04-30
+----------------------------------------------------------------------
+Fix: Fixed minor security concerns
+Improvement: Code improvements
+
+2.20.0 - 2022-04-27
+----------------------------------------------------------------------
+New: Readability analysis support for 7 new languages
+Improvement: Better SEO analysis support for languages other than English
+Fix: Minor bug fixes and copy changes
+
+2.19.1 - 2022-03-18
+----------------------------------------------------------------------
+Fix: Critical error due to conflict with schema plugin
+Fix: XSS vulnerability
+
+2.19.0 - 2022-03-10
+----------------------------------------------------------------------
+Improvement: Performance improvements
+Improvement: Remove beta and feedback link for Lighthouse
+Improvement: Canonical URL should not be added to noindex pages
+Fix: Sitemap link does not respect permalink settings
+Fix: Sitemap not working in plain permalink mode
+
+2.18.0 - 2022-02-16
+----------------------------------------------------------------------
+New: Sitemap support for WPML with different domains per language
+Improvement: Improved ability to translate SEO options through WPML
+Improvement: SEO Checkup removed in favor of new SEO Audit tool
+Fix: When importing from Yoast, options can't be excluded
+Fix: News Sitemap settings tab getting stuck for several seconds on large sites
+
+2.17.1 - 2022-02-04
+----------------------------------------------------------------------
+Fix: Certain redirects not working with plain permalink structure
+Fix: CSV import failing on windows
+Fix: Regex redirects matching partial URLs
+Improvement: Visibility of redirect upgrade notice restricted to admins
+
+2.17.0 - 2022-01-26
+----------------------------------------------------------------------
+New: Regex redirects
+New: Ability to bulk import and export redirects from CSV
+New: Ability to search through redirects
+New: Relative URL support in redirects
+New: Query variable support in redirects
+Improvement: New SmartCrawl admin menu icon
+Improvement: New design for email reports
+Fix: Sitemaps documentation link not pointing to the correct section
+Fix: Cursor in redirect modal jumping to EOL after every key press
+
+2.16.0 - 2021-11-16
+----------------------------------------------------------------------
+New: Advanced WooCommerce SEO Options
+Improvement: Include homepage URL in the first page sitemap in addition to the first post sitemap
+Fix: Error when SMARTCRAWL_CONDITIONAL_EXECUTION is defined
+Fix: Schema module self-activates upon any changes to the Social module
+Fix: Custom taxonomy terms with dashes not supported in macros
+
+2.15.3 - 2021-11-11
+----------------------------------------------------------------------
+Improvement: Support for Brand type in WooCommerce Product schema
+Fix: Certain schema properties come back after deletion
+
+2.15.2 - 2021-11-03
+----------------------------------------------------------------------
+Improvement: Whitelabel improvements
+
+2.15.1 - 2021-10-28
+----------------------------------------------------------------------
+Improvement: Code and stability improvements
+
+2.15.0 - 2021-10-06
+----------------------------------------------------------------------
+New: NewsArticle schema added automatically for types included in the news sitemap
+New: Included publication language code in the news sitemap
+New: SEO Checkup tool depreciated in favor of SEO Audit
+New: Added Product ID and SKU as options for MPN and other identifiers in WooCommerce Product schema
+New: Added default value for priceValidUntil to fix warnings in WooCommerce Product schema
+Fix: Incorrect taxonomy term loaded in schema type builder conditions
+Improvement: Schema builder code improvements
+
+2.14.2 - 2021-09-28
+----------------------------------------------------------------------
+Fix: Special characters not handled properly in news sitemap
+
+2.14.1 - 2021-09-23
+----------------------------------------------------------------------
+Fix: Multisite Sitewide deprecation operation performed on every upgrade
+
+2.14.0 - 2021-09-21
+----------------------------------------------------------------------
+New: Google News sitemap!
+Improvement: Made split sitemap the only available sitemap type
+Fix: After certain sitemap changes, search engines pinged twice
+Fix: Visual pagination issue on sites with hundreds of redirects
+Fix: Console warnings in schema type builder
+
+2.13.0 - 2021-08-30
+----------------------------------------------------------------------
+New: Added pagination to the redirection module
+New: Multisite sitewide mode replaced with new network settings
+New: Added ability to bulk restore items in the URL crawler
+Improvement: Site-specific data in configs applied only when source and destination match
+Improvement: Code improvements
+Fix: Redirects being cached by the browser
+Fix: Typos and copy changes
+
+2.12.0 - 2021-07-27
+----------------------------------------------------------------------
+New: SmartCrawl configs
+Improvement: Code improvements
+
+2.11.0 - 2021-06-24
+----------------------------------------------------------------------
+New: Lighthouse SEO scan
+New: Added "Post Data" source to FAQ schema type
+New: Support for custom taxonomies in schema builder
+New: Support for youtu.be URLs during automatic schema generation
+Improvement: Improved UI for redirect attachment settings
+Improvement: Better documentation for "Connect with Youtube" setting
+Fix: Checkup progress getting stuck at 22%
+Fix: Incorrect indexing of items in FAQPage schema
+Fix: jQuery compatibility issues
+Fix: Visual issue in file importer
+Fix: Minor conflict with WPBakery plugin
+Fix: PHP notices and warnings
+
+2.10.2 - 2021-04-14
+----------------------------------------------------------------------
+New: Recipe schema type
+New: Job Posting schema type
+New: Movie schema type
+New: Course schema type
+New: Books schema type
+New: Software Application schema type
+Improvement: Improve the custom text input of the schema builder
+Improvement: Add review property to schema types
+Fix: Compatibility with Yoast 16
+Fix: Use fallback values when org name or description is empty
+Fix: Mark local business aggregateRating properties as required
+Fix: Mark local business review properties as required
+
+2.10.1 - 2021-03-22
+----------------------------------------------------------------------
+New: Use the new robots API introduced in 5.7
+New: Migration of all links to wpmudev.com
+Fix: Local business currencies & payment visual bug
+
+2.10.0 - 2021-03-04
+----------------------------------------------------------------------
+New: Local Business support in schema builder
+New: Performance improvements for the schema builder
+New: Improved UX for the schema builder tool
+New: The ability to duplicate types in the schema builder
+New: Dashboard schema widget
+New: Comments schema for Article, FAQ and HowTo schema types
+New: Ability to add sub-types of Article and WooCommerce schema types
+New: Wizard for adding schema types
+New: Validation of schema types in the builder
+New: Improved accessibility
+New: Post comment count as possible schema builder value
+New: The ability to deactivate schema types
+New: Add the term arg in priority filter
+Fix: Meta description showing shortcodes and not the actual content
+Fix: Performance issues in Title and Meta component
+Fix: PHP warning in SEO analysis
+
+2.9.0 - 2021-01-11
+----------------------------------------------------------------------
+New: Schema types builder tool
+New: Ability to manually update sitemap and notify search engines
+New: More details provided when SEO checkup score is green
+Fix: Optimized code for fetching owner data
+Fix: In sitewide mode, Twitter and OpenGraph images not displayed on all sub-sites
+Fix: VideoObject schema not generated for shortened YouTube URL
+Fix: Balance CPU usage in admin posts list pages
+Fix: Branda not able to change SmartCrawl meta box title
+Fix: SmartCrawl not adding bbPress forum URLs to the sitemap
+Fix: Sitemap appears as active on widget while it is deactivated
+Fix: "Add Schema" action button missing from multisite SEO checkup page
+Fix: Whitelabel issue in features modal
+Fix: Post meta preview showing incorrect values
+Fix: Color of SEO checkup score is different from HUB dashboard
+Fix: Removed links to documentation in Whitelabel mode
+Fix: Improved text for duplicate IDs SEO check
+Fix: Automatically open modal when Add Redirect button clicked on dashboard
+Fix: Minor text changes
+
+2.8.4 - 2020-11-20
+----------------------------------------------------------------------
+New: General code improvements
+
+2.8.3 - 2020-10-21
+----------------------------------------------------------------------
+Fix: Autolinks not working in certain scenarios
+Fix: Action button in microdata check pointing to social settings
+Fix: Deprecated jQuery function being used in Javascript files
+Fix: Miscellaneous typos and copy changes
+Fix: Incorrect documentation link in robots section
+
+2.8.2 - 2020-10-08
+----------------------------------------------------------------------
+- Improvement: Performance improvements
+- Fix: Yoast importer issue with custom post types
+- Fix: Metabox character count overlapping with macros dropdown
+- Fix: SEO checkup timing out when pro version installed without dashboard plugin
+- Fix: Whitelabelling issue in robots module
+- Fix: OpenGraph enabled when welcome modal is skipped
+
+2.8.1 - 2020-09-24
+----------------------------------------------------------------------
+- Add: Option to disable the Test Schema button from admin bar
+- Fix: Incorrect URL in footer
+- Fix: Post list columns and SEO meta shown for non-public post types
+- Fix: Add schema for video and audio files directly uploaded and inserted into post content
+- Fix: Autolink linking to the page itself on custom post types
+
+----------------------------------------------------------------------
+2.8.0 - 2020-09-07
+----------------------------------------------------------------------
+- Add: Full support for default Schema types
+- Add: Pro page and widgets in free version
+- Add: Improved metabox SEO analysis recommendations
+- Add: New modal for highlighting latest features
+- Add: Optimum length indicators on Title & Meta page
+- Add: Ability to add new email recipients for sitemap crawler reports
+- Add: Improved styling for components in the post list
+- Fix: Implemented auto build process
+- Fix: Metabox preview showing incorrect post URL in classic editor
+- Fix: Embeds not loading in Gutenberg editor
+- Fix: SEO checkup linking to 404 page
+- Fix: URL redirection not working for URLs in other languages
+- Fix: Updated SUI to the latest version
+- Fix: Compatibility issue with Extra theme
+
+----------------------------------------------------------------------
+2.7.0 - 2020-08-11
+----------------------------------------------------------------------
+- Add: Options for WordPress 5.5 core sitemap
+- Add: New 'Reports' widget on dashboard page
+- Add: Author bio as meta description
+- Add: Macro support in metabox optimum length indicators
+- Add: Notice shown when sitemap crawler is taking longer than usual
+- Add: Ability to set rel attribute for links in post editor
+- Fix: Included support for for Yoast 14 import data
+- Fix: Better styling for broken images in the SEO checkup
+- Fix: Autolinking option 'Process only single posts and pages' not working
+- Fix: Removed deprecated character limit constants
+- Fix: PHP warnings shown for programmatically generated posts with no IDs
+- Fix: Autolinking option 'Prevent linking in heading tags' causing issues
+- Fix: Toggle state changing when clicking outside the toggle
+- Fix: Reporting day of month dropdown showing incorrect values
+- Fix: Report permalinks redirecting to Defender's masked login area
+- Fix: Twitter card values don't allow modification through filters
+- Fix: Accessibility issues due to outdated version of SUI
+- Fix: Keyword density marker not obtainable for image alts
+- Fix: Metabox preview not working in Safari due to console errors
+- Fix: Multiple admin notices can't be dismissed quickly
+- Fix: Social images not working when Smush converts PNGs to JPEGs for performance
+- Fix: Title and description lengths not calculated correctly for some languages by SEO checkup
+- Fix: Sitemap crawler not discovering links in split sitemaps
+- Fix: SEO checkup incorrectly identifying anchor IDs
+- Fix: SEO checkup using outdated meta title limit
+
+2.6.1 - 2020-03-12
+----------------------------------------------------------------------
+- Fix: "Focus keyword already used" warning shown for unique keywords
+- Fix: Headers already sent warnings in network admin
+
+2.6.0 - 2020-03-03
+----------------------------------------------------------------------
+- Add: Created separate network settings page
+- Add: Ability to change the recommended character lengths for title and meta
+- Add: Ability to update meta for static homepage from Title & Meta page
+- Add: Option to fall back to first content image for social networks
+- Add: Show reminder about sitemap when indexing is disabled for a taxonomy/post type
+- Add: Macros dropdown in post editor metabox
+- Add: Improved meta information on plugins page
+- Add: Recommended plugins notice for free users
+- Fix: Performance issues in autolinking module
+- Fix: Twitter Cards notice disappearing on Title & Meta page
+- Fix: Buttons in checkup and crawler emails sometimes pointing to inaccessible pages
+- Fix: Unnecessary ajax calls on post list page when analysis disabled
+- Fix: White-labeling issue in page markup
+- Fix: Automatic linking module generating links to the current page
+- Fix: WPML homepage versions not included in sitemap
+- Fix: Improved performance of focus keyword check
+- Fix: Minor UI issues on the SEO Checkup page
+- Fix: Settings link on the plugins list page not working on multisite
+- Fix: Updated WP.org review request
+- Fix: Changed instances of "whitelabel" to "white label"
+- Fix: Included support for for Yoast 13 import data
+- Fix: When plugin activated from Hub, made sure modules are in correct state
+- Fix: Warning in the redirection module
+
+2.5.1 - 2020-02-26
+----------------------------------------------------------------------
+- Add: New endpoints for SEO tab in Hub
+
+2.5.0 - 2020-01-16
+----------------------------------------------------------------------
+- Add: SEO checkup report revamped to have better recommendations and action buttons
+- Add: Better filtering of Twitter tags
+- Fix: Quick setup conflict with Themify
+- Fix: Whitelabelling not working for page source code
+- Fix: Copy incorrectly referencing 100+ plugins
+- Fix: Link to TTF font file incorrect
+- Fix: External URL redirects not working
+- Fix: Custom meta tags can't be deleted
+
+2.4.3 - 2019-11-13
+----------------------------------------------------------------------
+Fix: Fixed post editor conflict with WP 5.3
+
+2.4.2 - 2019-10-12
+----------------------------------------------------------------------
+- Fix: Disabling all sitemap taxonomies doesn't work as expected
+
+2.4.1 - 2019-10-11
+----------------------------------------------------------------------
+- Fix: Autolink settings affected by robots editor activation
+
+2.4.0 - 2019-10-08
+----------------------------------------------------------------------
+- Add: Control how your content is analyzed with the new analysis engine selector
+- Add: Sitemap can now be split into multiple light-weight sitemaps
+- Add: High contrast mode for accessibility
+- Add: Robots.txt editor
+- Add: New settings in the onboarding modal
+- Fix: UI adjustments in checkup reporting tab
+- Fix: Removed meta keyword settings due to their negligible SEO impact
+- Fix: Added new notice explaining that readability analysis works for English sites only
+- Fix: "Keyword used before" warning shown for exact match focus keywords only
+- Fix: Added options to reset plugin data and control what is kept/deleted when plugin is uninstalled
+- Fix: Removed link titles for keyword links in automatic linking
+- Fix: Updated incorrect link to WPMUDev in footer
+- Fix: Warning in PHP 7 when post metabox values saved
+- Fix: Incorrect examples in description of URL field in custom autolinks modal
+- Fix: Deactivating onpage module affecting unrelated functionality
+- Fix: Version 3.x of AIOSEO not supported by importer
+
+2.3.1 - 2019-06-01
+----------------------------------------------------------------------
+- Fix: Added checks to make sure that free version can be upgraded
+
+2.3.0 - 2019-05-08
+----------------------------------------------------------------------
+- Add: New, exciting, mobile-friendly UI in the admin area
+- Add: Support for whitelabel features
+- Add: Improved performance and reliability of SEO checkup and sitemap crawler
+- Add: Code improvements for the display of meta values
+- Add: New filter for addition of extra SEO and readability content
+- Add: Yoast importer now less likely to show "No compatible data ..." error
+- Add: New BuddyPress settings on Title & Meta page
+- Fix: Redirect attachment settings getting overwritten
+- Fix: Errors on Woocommerce shop page
+- Fix: Category titles incorrect in certain situations
+- Fix: Port matching issues in redirection module
+- Fix: Multisite always showing "Homepage set to static page" message
+- Fix: Sitewide sitemap settings not applied to network sub-sites
+- Fix: Branda not able to change SmartCrawl admin bar text
+- Fix: Non-public taxonomies listed on Title & Meta page
+- Fix: Autolinks module causing styling issues
+- Fix: Readability analysis compatibility issue with PHP 5.3
+- Fix: Macros can not be added to term title and description
+- Fix: JS console error on WP attachment editor page
+- Fix: UI bugs when focus keyword ignored in SEO analysis
+- Fix: Autolinking module showing self-links
+- Fix: SEO analysis not working with autosaves disabled
+- Fix: Sitemap showing invalid timestamps for certain post types
+- Fix: Links on Title & Meta page pointing to incorrect tab on the social page
+- Fix: Google plus field on social accounts page
+- Fix: Visual issue (tooltip getting cut off) on sitemap reporting page
+- Fix: Social account URLs with whitespaces not saved
+- Fix: Untranslatable string in separator settings on Title & Meta page
+- Fix: Fields losing focus while typing
+- Fix: Visual issues on small screens
+- Fix: Settings pages pointing to old documentation
+
+2.2.6 - 2019-03-26
+----------------------------------------------------------------------
+- Add: Support for Yoast v10 and AIOSEO v2.12 in third-party importer
+
+- Fix: Redirects added from sitemap crawl report not converted to absolute
+- Fix: Sitemap can't be removed while SC is active
+- Fix: Import not working for Automatic linking settings
+- Fix: Metabox conflict in classic editor
+
+2.2.5 - 2019-02-18
+----------------------------------------------------------------------
+- Add: New filters for modifying OpenGraph values
+- Add: Improved accuracy of readability analysis
+
+- Fix: Missing columns on the post list page
+- Fix: Certain websites throwing 404 error on redirection
+- Fix: SEO metabox shown for non-public posts
+- Fix: Better Gutenberg compatibility
+- Fix: Warning on sitemap settings page
+- Fix: Added ability to increase analysis request timeout
+- Fix: Improved autoloader performance
+- Fix: Warning in metabox placeholder loader
+- Fix: Inaccurate preview when more recent post revision available
+- Fix: Update the AIOSEOP importer to include the latest version
+- Fix: Stylesheet URL incorrect in sub-site sitemaps
+
+2.2.4.1 - 2018-12-11
+----------------------------------------------------------------------
+- Fix: Show the WP.org rating request to admins only
+
+2.2.4 - 2018-11-28
+----------------------------------------------------------------------
+- Add: URL redirection to external domains
+
+- Fix: SEO and readability analysis of password-protected posts
+- Fix: sitemap throws error if there's an image with ampersand sign
+- Fix: metabox showing details from other posts when globals modified
+- Fix: better autolinks compatibility with unicode languages
+- Fix: code improvements for sitemap dashboard
+- Fix: twitter and OG issues on static posts page
+- Fix: third-party import notice appears for very old data
+- Fix: conflicts on woocommerce shop page
+
+2.2.3 - 2018-11-12
+----------------------------------------------------------------------
+- Add: created new UI for Yoast and All In One SEO importers
+- Add: new option to keep existing post meta intact during import
+- Add: opengraph code optimizations and improvements
+- Add: made automatic sitemap updates less resource intensive
+- Add: made macros more extensible through new filters and actions
+- Add: support for dynamic placeholders prefixed with 'ct_' 'ct_desc_' and 'cf_'
+
+- Fix: issues caused by shortcode execution (integration with Divi, Avada, WPBakery and Swift page builders)
+- Fix: performance issues due to frequent analysis reruns
+- Fix: minor conflict with Gutenberg
+- Fix: autolinking module modifying inline scripts
+- Fix: outdated meta title and meta description limits
+- Fix: metabox conflict on media edit page
+- Fix: saving menus taking too much time when analysis active
+- Fix: post featured image printed as og:image before more specific images
+- Fix: issues in Avada page builder integration
+- Fix: log file not being written correctly
+- Fix: issues caused by faulty packaging
+- Fix: metabox preview showing raw HTML tags
+- Fix: search engine update link unnecessarily shown on WP dashboard
+- Fix: misnamed translation file
+- Fix: missing trailing slash in sitemap home URL
+- Fix: dates shown in sitemap dashboard widget not translatable
+- Fix: sitemap creation error shows html tags
+- Fix: format of date printed through %%currentdate%% placeholder not changeable
+- Fix: miscellaneous typos and copy changes
+- Fix: twitter placeholders on category edit page not accurate
+- Fix: sitemap XSL stylesheet URL/path resolution issue
+- Fix: twitter fields displayed unnecessarily on term edit page
+- Fix: update plugin version constant to ensure cache busting
+- Fix: untruncated title and description shown in Google previews
+- Fix: typo in upsell modal
+- Fix: metabox preview showing divi shortcodes
+- Fix: issues caused by shortcode execution
+- Fix: sub-headings check should pass if even one of the sub-headings contains our focus keywords
+- Fix: twitter card preview not loading
+- Fix: static front page handled as single post page
+- Fix: static homepage does not show correct meta values in all scenarios
+- Fix: static homepage built with builders shows shortcodes in 'Title & Meta' settings
+- Fix: metabox preview showing WPBakery shortcodes
+- Fix: warnings in autoloader
+- Fix: importer support for yoast version 9
+- Fix: metabox preview showing raw placeholders
+
+2.2.2.7 - 2018-10-09
+-----------------------------------------------------------------------
+- Fix: resolved conflict with swift framework mini product widget
+- Fix: resolved styling conflicts with WPBakery and a few other plugins
+- Fix: performance improvement for title and meta rewriting
+
+2.2.2.6 - 2018-10-02
+----------------------------------------------------------------------
+- Fix: fixed issue causing WSOD on some sites
+- Fix: don't show raw shortcodes in auto-generated meta description
+- Fix: better compatibility of readability and SEO analysis with page builders
+- Fix: made Google preview in the SC metabox more accurate
+
+2.2.2.5 - 2018-09-27
+----------------------------------------------------------------------
+- Fix: revert 2.2.2.4 changes causing WSOD on some sites
+
+2.2.2.4 - 2018-09-25
+----------------------------------------------------------------------
+- Fix: don't show raw shortcodes in auto-generated meta description
+- Fix: better compatibility of readability and SEO analysis with page builders
+- Fix: made Google preview in the SC metabox more accurate
+
+2.2.2.3 - 2018-08-31
+----------------------------------------------------------------------
+- Fix: fixed SEO checkup for free version
+
+2.2.2.2 - 2018-08-20
+----------------------------------------------------------------------
+- Fix: fixed edge case autolinks issue
+
+2.2.2.1 - 2018-08-20
+----------------------------------------------------------------------
+- Fix: Allow data import from Yoast 8.x
+- Fix: Updated plugin version constant to latest version for cache busting
+
+2.2.2 - 2018-07-13
+----------------------------------------------------------------------
+- New: support for custom post type archives
+- New: noindex/nofollow for post types
+- New: new OpenGraph tags og:url, og:type, og:image:width and og:image:height
+- New: code optimization
+- New: integration test suite for quality assurance
+- New: link each page to the relevant documentation section on the plugin website
+- New: import social profile links from AIOSEOP
+- New: dynamically adjust the toggles under "Site Owner Permissions"
+- New: update Google result preview when content is changed
+- New: prompt requesting reviews on WP.org
+
+- Fix: hide settings for disabled modules from plugin dashboard
+- Fix: BuddyPress group titles missing
+- Fix: links to enable OpenGraph and Twitter settings pointing to inaccessible pages
+- Fix: duplicate text in SEO Checkup section of metabox
+- Fix: plugin css conflicting with some WP admin components
+- Fix: analysis indicators not displaying correct colors in WP post list
+- Fix: settings need to be saved before reports for SEO Checkup are sent
+- Fix: on WP dashboard, 'update sitemap' link in the sitemap widget not working
+- Fix: typo in opengraph settings
+- Fix: when new URL scan is run, the URL Crawler section not loaded automatically
+- Fix: google/bing verification codes from yoast not imported correctly
+- Fix: columns in the post tables take more space then they should
+- Fix: google verification meta can't be removed once added
+- Fix: meta description not working on WooCommerce shop page
+- Fix: redundant save settings button under URL Crawler report
+- Fix: typo in the upgrade popup
+- Fix: when import from yoast notice dismissed, it comes back on page load
+- Fix: seo column in post list shows wrong color indicator when focus keyword missing
+- Fix: google/bing verification tags disappear when sitemap settings saved
+- Fix: XML sitemap opened in the current tab
+- Fix: when "Upgrade to Pro" clicked, pro version details opened in the current tab
+- Fix: values under "Site Owner Permissions" not saved when everything turned off
+- Fix: last checked time on SEO Checkup inconsistent
+- Fix: if modules disabled by network admin, site admin can still see them in settings
+- Fix: autolinks page has "TBC" as the description of a setting
+- Fix: author archive meta description not saved
+- Fix: dashboard sections display number of issues even if the corresponding module is disabled
+- Fix: on network sub-sites, disabled modules not behaving properly
+- Fix: previews are not refreshing on title and meta admin page
+- Fix: url crawler not always listing the URLs resulting in errors
+- Fix: hide SEO Checkup on network sub-sites
+- Fix: remove code for old google site verification settings
+- Fix: date archive settings not respected
+- Fix: admin bar menu should always match the admin menu
+- Fix: in url crawler, no message is shown when all missing urls added to sitemap
+- Fix: MOZ metabox not styled
+- Fix: Redirect Attachments options in Advanced Tools not saved when in off state
+- Fix: automatic linking toggle in post metabox displays wrong state
+- Fix: redundant MarketPress options
+- Fix: autolinks "Exclusions" don't work when "Case Sensitive Matching" is off
+- Fix: autolinks "Min Lengths" setting not working consistently
+- Fix: twitter settings for date archives not working consistently
+- Fix: meta description settings for search and 404 pages not working consistently
+- Fix: google verification meta settings not working consistently
+- Fix: quick edit fields not loading values
+- Fix: unwanted space before date archive title
+- Fix: minor inconsistencies in SEO analysis
+- Fix: no error message displayed when default user removed in reporting section under SEO Checkup
+- Fix: statistics on dashboard not refreshed when checkup completes in SEO Checkup section
+- Fix: MOZ data displayed even when wrong credentials added
+
+2.2.1 - 2018-03-31
+----------------------------------------------------------------------
+- Fix: post list pages performance issue.
+
+2.2 - 2018-03-28
+----------------------------------------------------------------------
+- New: Yoast & All-In-One SEO importers.
+- New: 'Refresh' button for content & readability analysis modules.
+- New: ability to set twitter cards details on post and type level.
+
+- Fix: compatibility with New Blog Templates plugin.
+- Fix: spelling and grammar issues.
+- Fix: duplicate info text in "No Image Alts" section of seo analysis.
+- Fix: support for Themify themes.
+- Fix: readability analysis summary outputting html tags.
+- Fix: saving draft or publishing posts closes the smartcrawl module.
+- Fix: problems in "Add All to Sitemap" button.
+- Fix: incorrect number of missing url's on main dashboard.
+
+2.1.1 - 2017-02-07
+----------------------------------------------------------------------
+- New: make Analysis dash widget results numeric and items clickable.
+- New: add OpenGraph and Twitter options for taxonomies.
+- New: exclude full URLs from sitemap.
+- New: grey out deactivated modules in site owner permissions.
+- New: enable styled sitemap on fresh setups.
+
+- Fix: increase recommended description  length from 160 to 230 chars.
+- Fix: redirection resolution on archive pages.
+- Fix: spelling and grammar issues.
+- Fix: UI and styling issues.
+- Fix: checkup scan tracking auto-update.
+- Fix: update option label copies.
+- Fix: update info links.
+- Fix: admin menu style issues in Firefox.
+- Fix: background color style issues.
+- Fix: conflict with Divi theme.
+- Fix: configuring links destinations when sitewide mode is active.
+- Fix: unifiy analysis status results.
+- Fix: BBPress compatibility issue with generated URLs.
+- Fix: update error strings on import/export issues.
+- Fix: sitemap items listed twice in audit report.
+- Fix: title tag on custom post type archives issue.
+- Fix: conflict with Movedo theme.
+- Fix: do not calculate disabled analysis results.
+- Fix: empty ignore URLs list clears sitemaps.
+- Fix: user name not shown for reporting.
+
+2.1.0.1 - 2017-12-18
+----------------------------------------------------------------------
+- Fix: Jetpack compatibility issue
+
+2.1 - 2017-12-18
+----------------------------------------------------------------------
+- Add: complete redesign
+- Add: macros separator support
+- Add: getting started wizard
+- Add: improved OpenGraph controls
+- Add: Twitter cards support
+- Add: schema support
+- Add: Pinterest verification support
+- Add: custom meta elements support
+- Add: linked social accounts support
+- Add: WP Checkup service integration
+- Add: scheduled crawl and checkup support
+- Add: SEO analysis check per post
+- Add: per post readability analysis
+- Add: per post autolinks toggle
+- Add: improved keywords handling with focus keywords
+- Add: ability to import and export settings
+- Add: allow sitemode switching in admin area on network setups
+- Add: attachment page noindex/redirection
+
+- Fix: improved previews
+- Fix: OpenGraph compatibility issue with Jetpack
+- Fix: sitemaps issue with alternate cron
+- Fix: additional checks for sitemaps read/write
+- Fix: HHVM compatibility
+- Fix: improve site owner permissions on network setups
+
+2.0.1 - 2017-06-07
+----------------------------------------------------------------------
+- Add: ability to ignore issues
+- Add: ability to add custom sitemap URLs
+- Add: option to skip strict description check
+- Fix: homepage keywords saving issue
+- Fix: MarketPress coupons conflict
+- Fix: typos
+- Fix: improve admin toolbar item and allow suppression
+- Fix: front-end templating deprecated tags conflict
+- Fix: WooCommerce shop page empty SEO details overrides
+
+2.0 - 2017-02-23
+----------------------------------------------------------------------
+- New: whole new interface
+- Add: OpenGraph support
+- Add: SEO Audit service support
+
+- Fix: deprecated constructors usage
+- Fix: W3TC object cache conflict issue
+- Fix: multiple anonymous post types rendering issue
+
+1.7.6 - 2015-08-25
+----------------------------------------------------------------------
+- Add advanced robots options info on listing pages.
+- Add redirections info on listing pages.
+- Project name update.
+
+1.7.5 - 2015-08-15
+----------------------------------------------------------------------
+- Add 301 redirection box permission level to the defaults list.
+- Fix for titles processing in feeds output.
+- Fix and cleanup for post type checks conditionals.
+- Fix for duplicated static front page in sitemaps.
+
+1.7.4 - 2014-12-28
+----------------------------------------------------------------------
+- Fix duplicates prevention stopping the post autolink expansion.
+- Fix keyword tag detection in autolink expansion replacement.
+- Fix extra whitespaces in autolink replacement expansion.
+- Fix for `set_time_limits` limitations.
+
+1.7.3 - 2014-11-11
+----------------------------------------------------------------------
+- Fix for some PHP notices.
+- Fix for regex matching points in autolinks detection.
+- Fix for link counts in autolinks matching to prevent clearing results.
+- Fix for maximum single link replacement in post title matching.
+
+1.7.2 - 2014-10-21
+----------------------------------------------------------------------
+- Fix for boundary matching in an unicode-safe way.
+- Fix for sitemap stylesheet path with SSL enabled.
+- Improved per-site settings mode.
+
+1.7.1 - 2014-07-08
+----------------------------------------------------------------------
+- Fix for attachment metadata handling.
+- Fix for showing network management level options.
+- Allowing optional partial on-page optimization.
+
+1.7 - 2014-05-22
+----------------------------------------------------------------------
+- Some typo fixes.
+- Fix for posts with invalid modified dates by forcing timestamps.
+- Added support for global marketplace pages.
+
+1.6.8.1 - 2014-05-10
+----------------------------------------------------------------------
+- Improving data validation.
+- Fix for BuddyPress pages recognition.
+
+1.6.8 - 2014-02-02
+----------------------------------------------------------------------
+- Added verification code options.
+- Added experimental features flag.
+- Fix for the settings binding by pushing it up the queue.
+
+1.6.7 - 2013-12-20
+----------------------------------------------------------------------
+- Exposed the meta description for filtering.
+- Adding in the `nofollow` rel attribute option.
+- Exposing the arguments building for filtering from central location.
+- Exposing the post/term priority filters.
+- Adding separate role settings for 301 redirection box selection.
+- Fix for title length replacement.
+- Fix for default BuddyPress canonicals.
+
+1.6.6 - 2013-08-11
+----------------------------------------------------------------------
+- Fix for quickedit boxes.
+- Strings update.
+
+1.6.5 - 2013-08-02
+----------------------------------------------------------------------
+- Converting robots multiple selection box into checbox array.
+- Time-limit skipping switch updated.
+
+1.6.4 - 2013-07-07
+----------------------------------------------------------------------
+- Postponing the capability checks.
+- Allowing for timeout prevention override.
+
+1.6.3 - 2013-07-06
+----------------------------------------------------------------------
+- Exposing title for additional filtering.
+- Added blog public sanity check.
+- Counters update.
+
+1.6.2 - 2013-04-14
+----------------------------------------------------------------------
+- Added subsequent pages robots meta rule.
+- Added meta robots options to search results page.
+- Event delegation update.
+- Fix for SeoMOZ calls bit flags.
+
+1.6.1 - 2013-03-20
+----------------------------------------------------------------------
+- Fix for metabox access privileges.
+- Better date archives optimization.
+
+1.6 - 2013-02-02
+----------------------------------------------------------------------
+- Added global meta robots settings for taxonomies.
+- Added conditional unhooking possibility.
+- Allowing per-post sitemap inclusion filtering.
+- Better post types handling.
+- Allowed linking to empty taxonomies.
+
+1.5.4 - 2013-01-13
+----------------------------------------------------------------------
+- Added custom columns to custom post types list views.
+- Allowing quick edit on custom post types lists.
+- Fix for WooCommerce main shop on-page settings.
+
+1.5.3 - 2013-01-08
+----------------------------------------------------------------------
+- Fix for BuddyPress installs outside the main site.
+- News keywords support.
+
+1.5.2 - 2012-12-30
+----------------------------------------------------------------------
+- Fix for autolinks being recognized in shortcodes.
+- Updated the project link.
+
+1.5.1 - 2012-11-02
+----------------------------------------------------------------------
+- Adding link target options for auto-generated links.
+- Allowed define override for metabox role settings.
+- Propagating autolink fixes by Daniel Speichert (thank you!).
+- Fix for BuddyPress groups page titles.
+- Fix for link in titles insertion issue and safer regex.
+
+
+1.5 - 2012-09-08
+----------------------------------------------------------------------
+- Exposing more hooks.
+- Making admin sitemap auto-update optional.
+- URL differentiation for domain mapped sites.
+- Disabling dashboard widgets for roles below contributor.
+
+1.4.4 - 2012-07-20
+----------------------------------------------------------------------
+- Fix for special characters in titles.
+- Fix for taxonomies autolinking.
+- Fix for post self-linking.
+- Added maximum autolinks number limit setting.
+- Added quick edit fields.
+
+1.4.3 - 2012-07-08
+----------------------------------------------------------------------
+- Improved paged output handling.
+- More robust post error handling.
+- Added boolean debug switches.
+
+1.4.2 - 05/26/2012
+----------------------------------------------------------------------
+- Fix for sitemaps URL resolution on domain-mapped sites
+
+1.4.1 - 05/07/2012
+----------------------------------------------------------------------
+- Fix for contextual help trigger.
+- Fix for full word auto-linking.
+- Added home page keywords settings.
+
+1.4 - 03/22/2012 Vladislav Bailovic
+----------------------------------------------------------------------
+- Fix for sitemap path finding.
+- Fix for BuddyPress Groups paging.
+- Improved taxonomies admin output.
+- Improved excerpt generation.
+- Added title and meta rewriting for BuddyPress Groups.
+- Added title and meta rewriting for BuddyPress Profiles.
+
+1.3.7 - 01/20/2012 Vladislav Bailovic
+----------------------------------------------------------------------
+- Fix for issue with BuddyPress documents plugin.
+
+1.3.6 - 12/22/2011 Vladislav Bailovic
+----------------------------------------------------------------------
+- Added options for duplicate link prevention.
+- Applied better contextual help trigger.
+
+1.3.5 - 11/29/2011 Vladislav Bailovic
+----------------------------------------------------------------------
+- Fix for robots meta output interaction with privacy settings.
+- Additional BuddyPress items check.
+
+1.3.4 - 11/24/2011 Vladislav Bailovic
+----------------------------------------------------------------------
+- Fix for BuddyPress groups support with no groups set up.
+- Added WPML config file.
+
+1.3.3 - 11/17/2011 Vladislav Bailovic
+----------------------------------------------------------------------
+- Fix for updated SEOMoz links.
+- Fix for BuddyPress groups priority calculation.
+
+1.3.2 - 11/10/2011 Vladislav Bailovic
+----------------------------------------------------------------------
+- Added BuddyPress groups and profiles in sitemaps.
+- Fixed site validation META headers.
+- Fixed sitemap path finding.
+
+1.3.1 - 11/05/2011 Vladislav Bailovic
+----------------------------------------------------------------------
+- Fix for sitemap path options.
+- Fix for autolinks issue with titles.
+
+1.3 - 10/25/2011 Vladislav Bailovic
+----------------------------------------------------------------------
+- Sitemap module rewrite, new sitemap options and dashboard widget.
+- Changed title limit to soft limit.
+- Added priority options for posts.
+
+1.2.1 - 07/16/2011 Vladislav Bailovic
+----------------------------------------------------------------------
+- Fixed autolink detection for strings that start with an
+non-ascii letter.
+
+1.2 - 07/15/2011 Vladislav Bailovic
+----------------------------------------------------------------------
+- Added "show tab" option to Network Admin while in sitewide, to apply
+tab permissions once the plugin goes in per-blog mode
+- Added "tags as keywords" checkbox.
+- Keywords as tags working.
+- Fixed issue with SEOmoz dashboard widget not getting the required info.
+- Fixed SEOmoz results caching in transients.
+- Changed sitemap path box to actual input box.
+
+1.1.2 - 06/15/2011 Vladislav Bailovic
+----------------------------------------------------------------------
+- Fix for issue with apostrophe (and other html special chars)
+in SEO metabox.
+
+1.1.1 - 06/14/2011 Vladislav Bailovic
+----------------------------------------------------------------------
+- Add htmlemtities and wordpress texturizer alternations for custom
+keywords in Autolinks.
+
+1.1 - 06/13/2011 Vladislav Bailovic
+----------------------------------------------------------------------
+- Added SEOmoz dashboard widget.
+- Added character couter and limits for SEO metabox.
+- Added meta keywords field to SEO metabox.
+- Fix for WPMU DEV SEO metabox using fixed width.
+- Fix for WDS_SITEWIDE define to toggle per-blog settings availability.
+
+1.0.9.7 - 06/02/2011 Vladislav Bailovic
+----------------------------------------------------------------------
+- Re-wrote some of the code.
+
+1.0.9.6 - 05/21/2011 Vladislav Bailovic
+----------------------------------------------------------------------
+- Fixed the the SimplePress incompatibility issue.
+
+1.0.9.5 - 05/15/2011 Vladislav Bailovic
+----------------------------------------------------------------------
+- Fixed the robots settings display on Page/Post list page.
+
+1.0.9.4 - 05/10/2011 Vladislav Bailovic
+----------------------------------------------------------------------
+- Normalizing newlines for title rewriting in head buffer.
+- Allowed matching title tags with arguments.
+- Re-introduced `wp_title` filter.
+
+1.0.9.3 - 05/02/2011 Vladislav Bailovic
+----------------------------------------------------------------------
+- Fixed header detection regular expression.
+- Removed HTML comments.
+
+1.0.9.2 - 05/01/2011 Vladislav Bailovic
+----------------------------------------------------------------------
+- Added Contributors to both metabox allowed lists.
+
+1.0.9.1 - 04/28/2011 Vladislav Bailovic
+----------------------------------------------------------------------
+- Fixed title rewriting in feeds
+
+1.0.9 - 04/23/2011 Vladislav Bailovic
+----------------------------------------------------------------------
+- Forced collapsed state on WDS metaboxes.
+- Deprecated default metabox hiding.
+- Fixed default permission level for showing metaboxes on singular installs.
+- Added WPMU DEV SEO metabox title l10n for Network installs. Singular installs will still see the branding.
+
+
+1.0.8 - 04/22/2011 Vladislav Bailovic
+----------------------------------------------------------------------
+- Fix for relative stylesheet URLs in sitemaps.
+- Fix for generating AND outputing sitemaps, without rebuilding on refresh.
+- Fix for auto-populating settings without admin having to visit the dashboard.
+- Added SEO and SEOmoz metabox toggling options and user displaying permission.
+
+1.0.7 - 04/20/2011 Vladislav Bailovic
+----------------------------------------------------------------------
+- Fix for title rewriting issues.
+
+1.0.6 - 04/16/2011 Vladislav Bailovic
+----------------------------------------------------------------------
+- Fix for SEOMoz API data fetching bug (transient data being stuck).
+- Fix for "Error: options page not found" message on multiple options step saves.
+- Updated Title SEO tweak to work with BuddyPress as well.
+- Fix for Sitemaps: using a regex match to determine if the sitemap was requested. Using a relative path to link the XSL stylesheet to it.
+- Added some error checking with is_wp_error
+- Some naming convention consistency fixes for option names.
+- Some PHP fixes.
+
+1.0.5 - 03/25/2011 Aaron Edwards
+----------------------------------------------------------------------
+- Fixes for PHP 4 incompatibilities
+- Limited posts in sitemap to 1000 most recent to prevent memory errors.
+- Added WDS_SITEMAP_POST_LIMIT define to be able to adjust limit in wp-config
+- Bug fix: Was killing admin help content
+
+1.0.4 - 03/24/2011 Aaron Edwards
+----------------------------------------------------------------------
+- Fixes to various php errors
+- Increase the time-limit for sitemap creation to work with big blogs
+
+1.0.3 - 03/07/2011
+----------------------------------------------------------------------
+- Enhancement: store sitemap in wp-content/uploads for main site on
+multisite
+
+1.0.2 - 03/05/2011
+----------------------------------------------------------------------
+- Bug fix: remove fields added to quick edit which where triggering a
+fatal error
+
+1.0.1 - 03/02/2011
+----------------------------------------------------------------------
+- Bug fix: sitemap not created on Multisite when blog upload dir doesn't
+exist yet
+
+1.0 - 01/08/2010
+----------------------------------------------------------------------
+- Initial Release.
+
+
+929832-1745519807-au
